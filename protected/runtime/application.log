@@ -1,0 +1,540 @@
+2018/06/08 10:11:10 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASTH&city=WSASTHBKK&hotelCode=&WSASIDDPS=&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/08 10:11:43 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASTH&city=WSASTHBKK&hotelCode=&WSASIDDPS000011=&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/08 10:12:08 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASID&city=WSASIDDPS&hotelCode=&WSASIDDPS000011=&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/08 10:46:25 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASID&city=WSASIDDPS&hotelCode=WSASIDDPS000011&rommCatCode=&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/08 10:47:46 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASID&city=WSASIDDPS&hotelCode=WSASIDDPS000011&rommCatCode=&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/08 11:17:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "CancelPolicy". in /Users/davidwong/Development/htdocs/framework/web/CController.php:486
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(270): CController->missingAction('CancelPolicy')
+#1 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('CancelPolicy')
+#2 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Ca...')
+#3 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/CancelPolicy
+---
+2018/06/08 11:17:53 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('ViewCancelPolic...')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Vi...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/ViewCancelPolicy
+---
+2018/06/08 11:30:10 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('ViewCancelPolic...')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Vi...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/ViewCancelPolicy&hotelCode=WSASTHBKK000160&checkIn=2018-06-08&checkOut=2018-06-09&AdultNum=1&RoomType=Single&flagAvail=True&SeqNo=1
+---
+2018/06/08 11:30:15 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('ViewCancelPolic...')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Vi...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/ViewCancelPolicy&hotelCode=WSASTHBKK000160&checkIn=2018-06-08&checkOut=2018-06-09&AdultNum=1&RoomType=Single&flagAvail=True&SeqNo=1
+---
+2018/06/08 11:31:17 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('ViewCancelPolic...')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Vi...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/ViewCancelPolicy
+---
+2018/06/08 11:43:45 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('ViewCancelPolic...')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Vi...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/ViewCancelPolicy&hotelCode=WSASTHBKK000160&InternalCode=CL005&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/08 11:53:56 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('ViewCancelPolic...')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Vi...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/ViewCancelPolicy&hotelCode=WSASTHBKK000160&InternalCode=CL005&checkIn=2018-06-08&checkOut=2018-06-09&SeqNo=1&flagAvail=True
+---
+2018/06/08 13:07:34 [error] [exception.ParseError] ParseError: syntax error, unexpected 'version' (T_STRING) in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/views/hoteldata/req_bookhotel.php:1
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/davidwon...', Array, true)
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(872): CBaseController->renderFile('/Users/davidwon...', Array, true)
+#2 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(79): CController->renderPartial('req_bookhotel', Array, true)
+#3 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionBookHotel()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('BookHotel')
+#8 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/Bo...')
+#9 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/BookHotel
+---
+2018/06/08 13:43:57 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASID&city=WSASIDDPS&hotelCode=WSASIDDPS000011&rommCatCode=&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/08 13:44:14 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASID&city=WSASIDDPS&hotelCode=WSASIDDPS000011&rommCatCode=&checkIn=2018-06-08&checkOut=2018-06-09AdultNum=2&RoomType=Twin
+---
+2018/06/08 13:46:30 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/davidwong/Development/htdocs/framework/web/CController.php:337
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('searchhotel')
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/se...')
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/searchhotel&destCountry=WSASID&city=WSASIDDPS&hotelCode=WSASIDDPS000011&rommCatCode=&checkIn=2018-06-08&checkOut=2018-06-09
+---
+2018/06/09 11:30:25 [error] [exception.CException] CException: CHttpSession.savePath "/Users/davidwong/Development/htdocs/klikmg/../ghoursmghol_sessions/" is not a valid directory. in /Users/davidwong/Development/htdocs/framework/web/CHttpSession.php:220
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/base/CComponent.php(152): CHttpSession->setSavePath('/Users/davidwon...')
+#1 /Users/davidwong/Development/htdocs/framework/YiiBase.php(220): CComponent->__set('savePath', '/Users/davidwon...')
+#2 /Users/davidwong/Development/htdocs/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(201): CModule->getComponent('session')
+#4 /Users/davidwong/Development/htdocs/framework/web/auth/CWebUser.php(200): CWebApplication->getSession()
+#5 /Users/davidwong/Development/htdocs/framework/base/CModule.php(394): CWebUser->init()
+#6 /Users/davidwong/Development/htdocs/framework/base/CModule.php(103): CModule->getComponent('user')
+#7 /Users/davidwong/Development/htdocs/framework/gii/GiiModule.php(176): CModule->__get('user')
+#8 /Users/davidwong/Development/htdocs/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#9 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('')
+#10 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#11 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/klikmg/index.php?r=gii
+---
+2018/06/11 18:14:53 [error] [exception.CException] CException: CHttpSession.savePath "/Users/davidwong/Development/htdocs/klikmg/../ghoursmghol_sessions/" is not a valid directory. in /Users/davidwong/Development/htdocs/framework/web/CHttpSession.php:220
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/base/CComponent.php(152): CHttpSession->setSavePath('/Users/davidwon...')
+#1 /Users/davidwong/Development/htdocs/framework/YiiBase.php(220): CComponent->__set('savePath', '/Users/davidwon...')
+#2 /Users/davidwong/Development/htdocs/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(201): CModule->getComponent('session')
+#4 /Users/davidwong/Development/htdocs/framework/web/auth/CWebUser.php(200): CWebApplication->getSession()
+#5 /Users/davidwong/Development/htdocs/framework/base/CModule.php(394): CWebUser->init()
+#6 /Users/davidwong/Development/htdocs/framework/base/CModule.php(103): CModule->getComponent('user')
+#7 /Users/davidwong/Development/htdocs/framework/gii/GiiModule.php(176): CModule->__get('user')
+#8 /Users/davidwong/Development/htdocs/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#9 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('')
+#10 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#11 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/klikmg/index.php?r=gii
+---
+2018/06/11 18:15:25 [error] [exception.CException] CException: CHttpSession.savePath "/Users/davidwong/Development/htdocs/klikmg/../ghoursmghol_sessions/" is not a valid directory. in /Users/davidwong/Development/htdocs/framework/web/CHttpSession.php:220
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/base/CComponent.php(152): CHttpSession->setSavePath('/Users/davidwon...')
+#1 /Users/davidwong/Development/htdocs/framework/YiiBase.php(220): CComponent->__set('savePath', '/Users/davidwon...')
+#2 /Users/davidwong/Development/htdocs/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(201): CModule->getComponent('session')
+#4 /Users/davidwong/Development/htdocs/framework/web/auth/CWebUser.php(200): CWebApplication->getSession()
+#5 /Users/davidwong/Development/htdocs/framework/base/CModule.php(394): CWebUser->init()
+#6 /Users/davidwong/Development/htdocs/framework/base/CModule.php(103): CModule->getComponent('user')
+#7 /Users/davidwong/Development/htdocs/framework/gii/GiiModule.php(176): CModule->__get('user')
+#8 /Users/davidwong/Development/htdocs/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#9 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('')
+#10 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#11 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/klikmg/index.php?r=gii
+---
+2018/06/11 18:22:27 [error] [exception.CException] CException: CHttpSession.savePath "/Users/davidwong/Development/htdocs/klikmg/../ghoursmghol_sessions/" is not a valid directory. in /Users/davidwong/Development/htdocs/framework/web/CHttpSession.php:220
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/base/CComponent.php(152): CHttpSession->setSavePath('/Users/davidwon...')
+#1 /Users/davidwong/Development/htdocs/framework/YiiBase.php(220): CComponent->__set('savePath', '/Users/davidwon...')
+#2 /Users/davidwong/Development/htdocs/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(201): CModule->getComponent('session')
+#4 /Users/davidwong/Development/htdocs/framework/web/auth/CWebUser.php(200): CWebApplication->getSession()
+#5 /Users/davidwong/Development/htdocs/framework/base/CModule.php(394): CWebUser->init()
+#6 /Users/davidwong/Development/htdocs/framework/base/CModule.php(103): CModule->getComponent('user')
+#7 /Users/davidwong/Development/htdocs/framework/gii/GiiModule.php(176): CModule->__get('user')
+#8 /Users/davidwong/Development/htdocs/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#9 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('')
+#10 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#11 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/klikmg/index.php?r=gii
+---
+2018/06/12 10:59:05 [error] [exception.ParseError] ParseError: syntax error, unexpected '"' INTO TABLE `usercsv` FIELDS' (T_CONSTANT_ENCAPSED_STRING) in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php:124
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(338): CWebApplication->createController('loadcsv/', Object(MgModule))
+#1 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(276): CWebApplication->createController('hoteldata/loadc...')
+#2 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/lo...')
+#3 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+---
+2018/06/12 11:02:48 [error] [exception.CException] CException: CHttpSession.savePath "/Users/davidwong/Development/htdocs/klikmg/../ghoursmghol_sessions/" is not a valid directory. in /Users/davidwong/Development/htdocs/framework/web/CHttpSession.php:220
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/base/CComponent.php(152): CHttpSession->setSavePath('/Users/davidwon...')
+#1 /Users/davidwong/Development/htdocs/framework/YiiBase.php(220): CComponent->__set('savePath', '/Users/davidwon...')
+#2 /Users/davidwong/Development/htdocs/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(201): CModule->getComponent('session')
+#4 /Users/davidwong/Development/htdocs/framework/web/auth/CWebUser.php(200): CWebApplication->getSession()
+#5 /Users/davidwong/Development/htdocs/framework/base/CModule.php(394): CWebUser->init()
+#6 /Users/davidwong/Development/htdocs/framework/base/CModule.php(103): CModule->getComponent('user')
+#7 /Users/davidwong/Development/htdocs/framework/gii/GiiModule.php(176): CModule->__get('user')
+#8 /Users/davidwong/Development/htdocs/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#9 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('')
+#10 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#11 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/klikmg/index.php?r=gii
+---
+2018/06/12 11:04:26 [error] [exception.CException] CException: CAssetManager.basePath "/Users/davidwong/Development/htdocs/klikmg/assets" is invalid. Please make sure the directory exists and is writable by the Web server process. in /Users/davidwong/Development/htdocs/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/Users/davidwon...')
+#1 /Users/davidwong/Development/htdocs/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /Users/davidwong/Development/htdocs/framework/gii/GiiModule.php(143): CAssetManager->publish('/Users/davidwon...')
+#3 /Users/davidwong/Development/htdocs/framework/base/CComponent.php(111): GiiModule->getAssetsUrl()
+#4 /Users/davidwong/Development/htdocs/framework/base/CModule.php(105): CComponent->__get('assetsUrl')
+#5 /Users/davidwong/Development/htdocs/framework/gii/views/layouts/main.php(5): CModule->__get('assetsUrl')
+#6 /Users/davidwong/Development/htdocs/framework/web/CBaseController.php(126): require('/Users/davidwon...')
+#7 /Users/davidwong/Development/htdocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/davidwon...', Array, true)
+#8 /Users/davidwong/Development/htdocs/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/davidwon...', Array, true)
+#9 /Users/davidwong/Development/htdocs/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#10 /Users/davidwong/Development/htdocs/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#11 /Users/davidwong/Development/htdocs/framework/web/CBaseController.php(215): COutputProcessor->run()
+#12 /Users/davidwong/Development/htdocs/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#13 /Users/davidwong/Development/htdocs/framework/gii/views/layouts/column1.php(7): CBaseController->endContent()
+#14 /Users/davidwong/Development/htdocs/framework/web/CBaseController.php(126): require('/Users/davidwon...')
+#15 /Users/davidwong/Development/htdocs/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/davidwon...', Array, true)
+#16 /Users/davidwong/Development/htdocs/framework/web/CController.php(787): CBaseController->renderFile('/Users/davidwon...', Array, true)
+#17 /Users/davidwong/Development/htdocs/framework/gii/controllers/DefaultController.php(47): CController->render('login', Array)
+#18 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): DefaultController->actionLogin()
+#19 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('login')
+#23 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#24 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/klikmg/index.php?r=gii/default/login
+---
+2018/06/12 11:04:47 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'kontraks_usr'@'localhost' (using password: YES) in /Users/davidwong/Development/htdocs/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Users/davidwong/Development/htdocs/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Users/davidwong/Development/htdocs/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Users/davidwong/Development/htdocs/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Users/davidwong/Development/htdocs/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /Users/davidwong/Development/htdocs/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Users/davidwong/Development/htdocs/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Users/davidwong/Development/htdocs/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/klikmg/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/klikmg/index.php?r=gii/default/index
+---
+2018/06/12 11:10:33 [error] [exception.ParseError] ParseError: syntax error, unexpected '"' INTO TABLE `usercsv` FIELDS' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php:125
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(338): CWebApplication->createController('loadcsv/', Object(MgModule))
+#1 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(276): CWebApplication->createController('hoteldata/loadc...')
+#2 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/lo...')
+#3 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+---
+2018/06/12 11:11:07 [error] [exception.ParseError] ParseError: syntax error, unexpected '"' INTO TABLE `usercsv` FIELDS' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php:125
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(338): CWebApplication->createController('loadcsv/', Object(MgModule))
+#1 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(276): CWebApplication->createController('hoteldata/loadc...')
+#2 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/lo...')
+#3 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+---
+2018/06/12 11:11:36 [error] [exception.ParseError] ParseError: syntax error, unexpected '"' INTO TABLE `usercsv` FIELDS' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php:125
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(338): CWebApplication->createController('loadcsv/', Object(MgModule))
+#1 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(276): CWebApplication->createController('hoteldata/loadc...')
+#2 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/lo...')
+#3 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+---
+2018/06/12 11:13:31 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/Users/davidwong/Development/htdocs/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(125): executeSql()
+#1 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#5 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#6 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/components/DAO.php (19)
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (125)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:14:48 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/Users/davidwong/Development/htdocs/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(125): executeSql()
+#1 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#5 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#6 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/components/DAO.php (19)
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (125)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:16:12 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/Users/davidwong/Development/htdocs/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(125): executeSql()
+#1 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#5 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#6 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/components/DAO.php (19)
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (125)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:16:47 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php:122
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(338): CWebApplication->createController('loadcsv/', Object(MgModule))
+#1 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(276): CWebApplication->createController('hoteldata/loadc...')
+#2 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/lo...')
+#3 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+---
+2018/06/12 11:17:03 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/Users/davidwong/Development/htdocs/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(124): executeSql()
+#1 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#5 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#6 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/components/DAO.php (19)
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (124)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:18:41 [error] [php] fopen(uploads/contactsyii.csv): failed to open stream: Permission denied (/Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php:108)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/Getcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (108)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:18:47 [error] [php] fopen(uploads/contactsyii.csv): failed to open stream: Permission denied (/Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php:108)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#3 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#4 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#6 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/Getcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (108)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:19:18 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/Users/davidwong/Development/htdocs/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(124): executeSql()
+#1 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#5 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#6 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/components/DAO.php (19)
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (124)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:19:58 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/Users/davidwong/Development/htdocs/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(124): executeSql()
+#1 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#5 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#6 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/components/DAO.php (19)
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (124)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:21:40 [error] [exception.CException] CException: Property "CDbConnection.driver_options" is not defined. in /Users/davidwong/Development/htdocs/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/YiiBase.php(220): CComponent->__set('driver_options', Array)
+#1 /Users/davidwong/Development/htdocs/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(459): CModule->getComponent('db')
+#3 /Users/davidwong/Development/htdocs/framework/db/ar/CActiveRecord.php(639): CApplication->getDb()
+#4 /Users/davidwong/Development/htdocs/framework/db/ar/CActiveRecord.php(2389): CActiveRecord->getDbConnection()
+#5 /Users/davidwong/Development/htdocs/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(Usercsv))
+#6 /Users/davidwong/Development/htdocs/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#7 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(121): CActiveRecord->__construct()
+#8 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#9 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): CController->run('loadcsv')
+#13 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController('mg/hoteldata/lo...')
+#14 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+---
+2018/06/12 11:22:51 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/Users/davidwong/Development/htdocs/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php(124): executeSql()
+#1 /Users/davidwong/Development/htdocs/framework/web/actions/CInlineAction.php(49): HoteldataController->actionLoadcsv()
+#2 /Users/davidwong/Development/htdocs/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/davidwong/Development/htdocs/framework/web/CController.php(286): HoteldataController->runAction()
+#4 /Users/davidwong/Development/htdocs/framework/web/CController.php(265): HoteldataController->runActionWithFilters()
+#5 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(282): HoteldataController->run()
+#6 /Users/davidwong/Development/htdocs/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /Users/davidwong/Development/htdocs/klikmg/index.php(13): CWebApplication->run()
+REQUEST_URI=/klikmg/index.php?r=mg/hoteldata/loadcsv
+in /Users/davidwong/Development/htdocs/klikmg/protected/components/DAO.php (19)
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (124)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
+2018/06/12 11:28:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '2' at line 1. The SQL statement executed was: 2.
+in /Users/davidwong/Development/htdocs/klikmg/protected/modules/mg/controllers/HoteldataController.php (133)
+in /Users/davidwong/Development/htdocs/klikmg/index.php (13)
