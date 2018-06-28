@@ -10,7 +10,8 @@ return array(
     'id'=>'ghoursmghol_id9', //http://www.yiiframework.com/wiki/135/single-sign-on-across-multiple-subdomains/
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'ghoursmghol',
-    'theme'=>'ghoursmghol',
+    //'theme'=>'ghoursmghol',
+    'theme'=>'blueribbon',
     'timeZone'=>'Asia/Bangkok',
     // preloading 'log' component
     'preload'=>array('log'),

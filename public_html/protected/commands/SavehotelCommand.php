@@ -41,7 +41,7 @@ class SavehotelCommand extends CConsoleCommand
           $jsonResult = ApiRequestor::post(ApiRequestor::URL_SEARCH_HOTEL, $xmlRequest);
 
           $hotelList = json_decode($jsonResult,TRUE)['SearchHotel_Response']['Hotel'];
-          print_r($hotelList);
+          //print_r($hotelList);
           $textCSV = '';
           $lineText = '';
           $lineText = Helper::putStringCSV($lineText, 'Hotel ID', 'str');
@@ -95,9 +95,11 @@ class SavehotelCommand extends CConsoleCommand
                 SET tghproperty.property_name = tghuploadhotel.property_name
                 , tghproperty.market_name = tghuploadhotel.market_name
                 , tghproperty.property_type_id = 2
+                , tghproperty.country_cd = tghuploadhotel.country_cd
+                , tghproperty.city_cd = tghuploadhotel.city_cd
                 , tghproperty.update_dt = :udt;",array(':udt'=>$now));
-              DAO::executeSql("INSERT INTO tghproperty (property_cd, property_name, market_name,property_type_id,gmaps_longitude,gmaps_latitude,numberofstar, update_dt)
-                    SELECT DISTINCT tghuploadhotel.property_cd, tghuploadhotel.property_name, tghuploadhotel.market_name,2,tghuploadhotel.longitude,tghuploadhotel.latitude,tghuploadhotel.rating, :udt
+              DAO::executeSql("INSERT INTO tghproperty (property_cd, property_name, market_name,property_type_id,gmaps_longitude,gmaps_latitude,numberofstar, `country_cd`, `city_cd`, update_dt)
+                    SELECT DISTINCT tghuploadhotel.property_cd, tghuploadhotel.property_name, tghuploadhotel.market_name,2,tghuploadhotel.longitude,tghuploadhotel.latitude,tghuploadhotel.rating,tghuploadhotel.country_cd,tghuploadhotel.city_cd, :udt
                     FROM tghuploadhotel
                     LEFT JOIN tghproperty ON tghuploadhotel.property_cd = tghproperty.property_cd
                     WHERE tghproperty.property_cd IS NULL",array(':udt'=>$now));

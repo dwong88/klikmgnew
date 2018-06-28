@@ -4,6 +4,7 @@
 	<RefRsvnNo></RefRsvnNo>
 	<OSRefNo>9923012912395</OSRefNo>
 	  <PaxPassport><?php echo ApiRequestor::PAX_PASSPORT; ?></PaxPassport>
+    <RPCurrency>IDR</RPCurrency>
     <HotelList Seq="<?php echo $SeqNo; ?>" InternalCode="<?php echo $InternalCode; ?>" flagAvail="<?php echo $flagAvail; ?>">
 		<OrgHBId></OrgHBId>
 		<OrgResId></OrgResId>

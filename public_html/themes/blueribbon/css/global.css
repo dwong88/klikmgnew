@@ -1,0 +1,76 @@
+@CHARSET "ISO-8859-1";
+/*
+	WT: Kalau form didesign pakai table, di tablenya pakai class ini:
+*/
+.table-content, .table-content table {margin-bottom: 0px;}
+.table-content td {padding: 0px;}
+/* Untuk autocomplete, supaya textnya tidak terlalu besar. */
+.ui-autocomplete .ui-menu-item a {font-size: 12px;}
+
+
+/*
+	WT: Button menggunakan tag A, dengan icon didalamnya.
+*/
+a.button {
+background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+background-image: -webkit-gradient(linear,left top,left bottom,
+    color-stop(0, #ffffff),color-stop(1, #dbdbdb));
+filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#ffffff', EndColorStr='#dbdbdb');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#ffffff', EndColorStr='#dbdbdb')";
+-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+padding: 1px 10px;
+text-decoration: none;
+text-shadow: #fff 0 1px 0;
+float: left;
+margin-right: 10px;
+margin-bottom: 10px;
+display: block;
+color: #597390;
+line-height: 24px;
+font-weight: bold;
+border: 1px solid #979797;
+}
+
+a.button:hover {
+background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+background-image: -webkit-gradient(linear,left top,left bottom,
+    color-stop(0, #ffffff),color-stop(1, #eeeeee));
+filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#ffffff', EndColorStr='#eeeeee');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#ffffff', EndColorStr='#eeeeee')";
+color: #000;
+display: block;
+}
+
+a.button:active {
+background-image: -moz-linear-gradient(top, #dbdbdb, #ffffff);
+background-image: -webkit-gradient(linear,left top,left bottom,
+    color-stop(0, #dbdbdb),color-stop(1, #ffffff));
+filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#dbdbdb', EndColorStr='#ffffff');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#dbdbdb', EndColorStr='#ffffff')";
+text-shadow: 0px -1px 0 rgba(255, 255, 255, 0.5);
+margin-top: 1px;
+}
+
+a.button.icon {
+padding-left: 10px;
+}
+
+a.button.icon span{
+padding-left: 25px;
+}
+
+a.button.icon span.addpeople{ background: url(images/icon/addpeople.png) no-repeat; }
+a.button.icon span.close{ background: url(images/icon/close.png) no-repeat; }
+a.button.icon span.question{ display:block; background: url(images/icon/question.png) no-repeat;}
+a.button.icon span.accept{ background: url(images/icon/accept.png) no-repeat;}

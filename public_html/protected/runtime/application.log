@@ -870,3 +870,95 @@ Stack trace:
 #6 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
 #7 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
 
+2018/06/28 03:39:16 [error] [php] Undefined index: HotelId (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:78)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 03:39:22 [error] [php] Undefined index: HotelId (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:78)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 03:39:24 [error] [php] Undefined index: HotelId (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:78)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 03:40:38 [error] [php] Undefined index: HotelId (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:79)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 03:44:07 [error] [php] Undefined index: Facility (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:38)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 03:45:11 [error] [exception.ParseError] ParseError: syntax error, unexpected '[' in /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:37
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('getfacility')
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once('/Users/davidwon...')
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once('/Users/davidwon...')
+#6 {main}
+---
+2018/06/28 03:45:16 [error] [exception.ParseError] ParseError: syntax error, unexpected '[' in /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:37
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('getfacility')
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once('/Users/davidwon...')
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once('/Users/davidwon...')
+#6 {main}
+---
+2018/06/28 03:49:06 [error] [php] Undefined index: Facility (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:39)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 03:55:12 [error] [php] Illegal string offset 'GetHotelDetail_Response' (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:37)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 03:56:08 [error] [php] Illegal string offset 'GetHotelDetail_Response' (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:37)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+

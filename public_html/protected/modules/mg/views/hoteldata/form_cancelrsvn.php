@@ -3,6 +3,7 @@
   <input type="text" name="OSRefNo" placeholder="OSRefNo"><br>
   <input type="text" name="HBookId" placeholder="HBookId"><br>
       <div style="margin-bottom:5px;">
-               <button type="submit"  name="simpan" value="Simpan"> Simpan </button>
+               <button type="submit"  name="simpan" value="Simpan"> Submit </button>
+               <button onclick="goBack()">Go Back</button>
      </div>
 </form>

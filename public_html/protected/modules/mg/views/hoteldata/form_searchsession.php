@@ -15,6 +15,7 @@
       <input type="text" name="RQBedChild" placeholder="RQBedChild"><br>
       <input type="text" name="ChildAge" placeholder="ChildAge"><br>-->
       <div style="margin-bottom:5px;">
-               <button type="submit"  name="simpan" value="Simpan"   onClick="return validate();"> Simpan </button>
+               <button type="submit"  name="simpan" value="Simpan"   onClick="return validate();"> Search </button>
+               <button onclick="goBack()">Go Back</button>
      </div>
 </form>

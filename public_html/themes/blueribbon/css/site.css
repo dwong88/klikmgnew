@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+#mainmenu ul {padding: 3px 6px;}
+#mainmenu ul li a {color: white;}
+#mainmenu {background-color: #1F499F; border-top-color: white;}
+.col-right {text-align: right;}
+.container {width: auto;}
+#header {background-position: right;}
+#page {margin-left: 5px; margin-right: 5px; margin-top: 0px;}
+
+.button-bar {background: url("images/bg.gif") repeat-x scroll left top white;}
+.button-bar img {display: block; margin: auto 0; vertical-align: middle; float: left;}
+.button-bar span {padding: 0.3em 1em; display: block; float: left; border-right:1px solid black;}
+.button-bar a{text-decoration: none; font-weight: bold; color: #222;}
+.button-bar a:hover span {text-decoration: underline; background: url("images/bgovr.gif") repeat-x scroll left top white;}
+
+.k-table-detail {border-collapse: collapse; border-spacing: 0;}
+	.k-table-detail th {background: url("images/bgdtl.gif") repeat-x scroll left top white; color: #eee; font-weight: bold; text-decoration: none; text-align: center;}
+	.k-table-detail th, .k-table-detail td {border: 1px solid white; font-size: 0.9em; padding: 0.3em 0.9em 0.1em 0.3em;}
+	.k-table-detail tbody tr:nth-child(even) {background: none repeat scroll 0 0 #F8F8F8;}
+	.k-table-detail tbody tr:nth-child(odd) {background: none repeat scroll 0 0 #E5F1F4;}
+	.k-table-detail .button-column {width: 40px; text-align: center;}
+	.k-table-detail input, .k-table-detail select {width: 100%;}
+	
+table.k-table-form, table.k-table-form table {margin-bottom: 0px; width: auto;}
+input[readonly] {background-color: #dedede ! important;}
+
+/* Di CGridView kalau row mau berwarna pakai ini. */
+.grid-view-status .row-disabled {color: grey;}
+.grid-view-status .row-active {color: green;}
+.grid-view-status .row-inactive {color: red;}
+.cls-table-detail {
+	padding: 5px;
+}

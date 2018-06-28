@@ -28,7 +28,7 @@ class TghpropertyController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','search','searchsession'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -140,6 +140,75 @@ class TghpropertyController extends Controller
 			$property_cd = $hotels[$c]['property_cd'];
 			$property_name = $hotels[$c]['property_name'];
 		}
+
+		echo json_encode($hotels);
+		/*$dataProvider=new CActiveDataProvider('Tghproperty');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));*/
+	}
+
+	public function actionSearch()
+	{
+		$destCity = $_GET['destCity'];
+		$hotels = DAO::queryAllSql("SELECT location_type, location_code,location_name as description
+																						FROM tghsearchlocation
+																						WHERE location_name like '".$destCity."%'");
+		$countselect = count($hotels);
+
+		echo json_encode($hotels);
+		/*$dataProvider=new CActiveDataProvider('Tghproperty');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));*/
+	}
+
+	public function actionSearchsession()
+	{
+		//print_r($_GET);
+		$destCitycode = $_GET['destCitycode'];
+		$duration=$_GET['duration'];
+		$location_type=$_GET['code'];
+		$tempcheckIn=$_GET['checkin'];
+		//$checkOut=$_POST['checkOut'];
+
+			$checkIn = substr($tempcheckIn,0,10);
+		//$newDate = date("Y-m-d", strtotime($originalDate));
+
+		$tambahhari = '+'.$duration. 'day';
+		$newdate = strtotime ( $tambahhari , strtotime ( $checkIn ) ) ;
+		$checkOut = date ( 'Y-m-d' , $newdate );
+
+		if($location_type==2){
+		$hotels = DAO::queryAllSql("SELECT roomcateg_name as name,price
+																						FROM tghsearchprice
+																						WHERE property_cd = '".$destCitycode."'
+																						AND check_in = '".$checkIn."'
+																						AND check_out = '".$checkOut."'");
+		}
+
+		if($location_type==3){
+			/*echo ("SELECT Tghproperty.property_name as name,tghsearchprice.price
+																							FROM tghsearchprice
+																	INNER JOIN tghproperty
+							  															ON  Tghproperty.property_cd = tghsearchprice.property_cd
+																							WHERE tghsearchprice.property_cd like '".$destCitycode."%'
+																							AND tghsearchprice.check_in = '".$checkIn."'
+																							AND tghsearchprice.check_out = '".$checkOut."'
+																							GROUP BY Tghproperty.property_name
+																							");*/
+		$hotels = DAO::queryAllSql("SELECT Tghproperty.property_name as name,tghsearchprice.price,
+				Tghproperty.gmaps_latitude,Tghproperty.gmaps_longitude,Tghproperty.addressline1 as displayAddress,Tghproperty.addressline1 as address
+																						FROM tghsearchprice
+																INNER JOIN tghproperty
+						  															ON  Tghproperty.property_cd = tghsearchprice.property_cd
+																						WHERE tghsearchprice.property_cd like '".$destCitycode."%'
+																						AND tghsearchprice.check_in = '".$checkIn."'
+																						AND tghsearchprice.check_out = '".$checkOut."'
+																						GROUP BY Tghproperty.property_name
+																						");
+		}
+		$countselect = count($hotels);
 
 		echo json_encode($hotels);
 		/*$dataProvider=new CActiveDataProvider('Tghproperty');
