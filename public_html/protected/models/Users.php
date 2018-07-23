@@ -5,9 +5,9 @@
  *
  * The followings are the available columns in table 'tghusers':
  * @property string $id
- * @property string $fullName
+ * @property string $fullname
  * @property string $email
- * @property integer $phoneNo
+ * @property integer $phoneno
  * @property string $password
  */
 class Users extends CActiveRecord
@@ -28,13 +28,13 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('fullName, email, phoneNo, password', 'required'),
-			array('phoneNo', 'numerical', 'integerOnly'=>true),
-			array('fullName, email', 'length', 'max'=>100),
+			array('fullname, email, phoneno, password', 'required'),
+			array('phoneno', 'numerical', 'integerOnly'=>true),
+			array('fullname, email', 'length', 'max'=>100),
 			array('password', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, fullName, email, phoneNo, password', 'safe', 'on'=>'search'),
+			array('id, fullname, email, phoneno, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,9 +56,9 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'fullName' => 'Full Name',
+			'fullname' => 'Full Name',
 			'email' => 'Email',
-			'phoneNo' => 'Phone No',
+			'phoneno' => 'Phone No',
 			'password' => 'Password',
 		);
 	}
@@ -82,9 +82,9 @@ class Users extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
-		$criteria->compare('fullName',$this->fullName,true);
+		$criteria->compare('fullname',$this->fullname,true);
 		$criteria->compare('email',$this->email,true);
-		$criteria->compare('phoneNo',$this->phoneNo);
+		$criteria->compare('phoneno',$this->phoneno);
 		$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(

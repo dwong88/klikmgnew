@@ -962,3 +962,174 @@ Stack trace:
 #4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
 #5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
 
+2018/06/28 04:12:44 [error] [php] Undefined variable: hotelList (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:77)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:12:47 [error] [php] Undefined variable: hotelList (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:77)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:13:06 [error] [php] Undefined variable: hotelList (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:77)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:16:51 [error] [php] Array to string conversion (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:99)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:18:37 [error] [php] Array to string conversion (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:99)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:19:44 [error] [php] Undefined index: Facility (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:95)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:20:44 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:161
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('getfacility')
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once('/Users/davidwon...')
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once('/Users/davidwon...')
+#6 {main}
+---
+2018/06/28 04:20:48 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:161
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('getfacility')
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once('/Users/davidwon...')
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once('/Users/davidwon...')
+#6 {main}
+---
+2018/06/28 04:22:56 [error] [php] Undefined index: Facility (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:97)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:23:29 [error] [php] Undefined index: Facility (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:97)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/06/28 04:33:05 [error] [php] Array to string conversion (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/GetfacilityCommand.php:103)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): GetfacilityCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/07/19 02:47:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-dav' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO tghsearchlocation (location_type, location_code, location_name, market_name, update_dt)
+                    SELECT :lty, tghproperty.property_cd, tghproperty.property_name, tghproperty.market_name, :udt
+                    FROM tghproperty
+                    LEFT JOIN tghsearchlocation ON tghproperty.property_cd = tghsearchlocation.location_code AND tghsearchlocation.location_type = :lty
+                    WHERE tghsearchlocation.location_code IS NULL.
+2018/07/19 03:03:08 [error] [exception.ParseError] ParseError: syntax error, unexpected ',', expecting ']' in /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/SavehotelroomcategCommand.php:73
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('savehotelroomca...')
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once('/Users/davidwon...')
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once('/Users/davidwon...')
+#6 {main}
+---
+2018/07/19 03:24:21 [error] [exception.ParseError] ParseError: syntax error, unexpected ',' in /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/SavehotelroomcategCommand.php:72
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(67): CConsoleCommandRunner->createCommand('savehotelroomca...')
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once('/Users/davidwon...')
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once('/Users/davidwon...')
+#6 {main}
+---
+2018/07/19 03:32:53 [error] [php] fwrite(): supplied resource is not a valid stream resource (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/SavehotelroomcategCommand.php:92)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): SavehotelroomcategCommand->run()
+#2 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#3 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#4 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#6 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/07/19 04:12:39 [error] [php] Undefined offset: 2 (/Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/commands/SavehotelroomcategCommand.php:70)
+Stack trace:
+#0 /Users/davidwong/Development/htdocs/framework/console/CConsoleCommandRunner.php(71): SavehotelroomcategCommand->run()
+#1 /Users/davidwong/Development/htdocs/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /Users/davidwong/Development/htdocs/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /Users/davidwong/Development/htdocs/framework/yiic.php(33): CConsoleApplication->run()
+#4 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic.php(8): require_once()
+#5 /Users/davidwong/Development/htdocs/klikmgnew/public_html/protected/yiic(4): require_once()
+
+2018/07/19 04:51:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbghours.tghuploadhotel_roomcateg_roomcateg' doesn't exist. The SQL statement executed was: TRUNCATE TABLE tghuploadhotel_roomcateg_roomcateg.
+2018/07/19 04:55:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbghours.tghuploadhotel_roomcateg_roomcateg' doesn't exist. The SQL statement executed was: TRUNCATE TABLE tghuploadhotel_roomcateg_roomcateg.
+2018/07/19 04:55:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'property_cd' in 'field list'. The SQL statement executed was: INSERT INTO tghroomtype (room_type_id,property_cd, room_type_name, room_type_desc,create_dt,create_by,update_dt,update_by,room_type_cleaning_minutes)
+                    SELECT DISTINCT tghuploadhotel_roomcateg.roomtype_cd,tghuploadhotel_roomcateg.property_cd, tghuploadhotel_roomcateg.roomtype_name,'', :udt,1, :udt,1,2
+                    FROM tghuploadhotel_roomcateg
+                    .
+2018/07/19 04:56:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'WSMA07080647' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO tghroomtype (room_type_id,property_cd, room_type_name, room_type_desc,create_dt,create_by,update_dt,update_by,room_type_cleaning_minutes)
+                    SELECT DISTINCT tghuploadhotel_roomcateg.roomtype_cd,tghuploadhotel_roomcateg.property_cd, tghuploadhotel_roomcateg.roomtype_name,'', :udt,1, :udt,1,2
+                    FROM tghuploadhotel_roomcateg
+                    .
+2018/07/20 04:30:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tghuploadhotel_roomcateg.room_type_id' in 'on clause'. The SQL statement executed was: UPDATE tghroomtype
+                JOIN tghuploadhotel_roomcateg ON
+                tghroomtype.room_type_id = tghuploadhotel_roomcateg.room_type_id AND
+                tghroomtype.property_cd = tghuploadhotel_roomcateg.property_cd
+                SET tghroomtype.room_type_name = tghuploadhotel_roomcateg.room_type_name
+                , tghroomtype.update_dt = :udt;.
+2018/07/20 04:32:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tghuploadhotel_roomcateg.room_type_name' in 'field list'. The SQL statement executed was: UPDATE tghroomtype
+                JOIN tghuploadhotel_roomcateg ON
+                tghroomtype.room_type_id = tghuploadhotel_roomcateg.roomtype_cd AND
+                tghroomtype.property_cd = tghuploadhotel_roomcateg.property_cd
+                SET tghroomtype.room_type_name = tghuploadhotel_roomcateg.room_type_name
+                , tghroomtype.update_dt = :udt;.
+2018/07/20 04:33:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'WSMA05110035-WSASIDCGK000019' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO tghroomtype (room_type_id,property_cd, room_type_name, room_type_desc,create_dt,create_by,update_dt,update_by,room_type_cleaning_minutes)
+                    SELECT DISTINCT tghuploadhotel_roomcateg.roomtype_cd,tghuploadhotel_roomcateg.property_cd, tghuploadhotel_roomcateg.roomtype_name,'', :udt,1, :udt,1,2
+                    FROM tghuploadhotel_roomcateg
+                    .

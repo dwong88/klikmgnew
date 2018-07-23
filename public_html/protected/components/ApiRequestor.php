@@ -42,6 +42,7 @@ class ApiRequestor
         // Send to remote and return data to caller.
         $result = curl_exec($ch);
         curl_close($ch);
+        //echo $result;
         $result = stristr($result,"<?xml");
 
         if ($result === FALSE) {
@@ -63,6 +64,8 @@ class ApiRequestor
 
         $xml = simplexml_load_string($result);
 
+        echo $xml;
+        //Yii::app()->end();
         return json_encode($xml);
     }
 }

@@ -6,27 +6,30 @@
  * The followings are the available columns in table 'tghbookmg':
  * @property string $booking_id
  * @property integer $user_id
- * @property string $ResNo
- * @property string $OSRefNo
- * @property string $HBookId
- * @property string $VoucherNo
- * @property string $VoucherDt
- * @property string $Status
- * @property string $HotelId
- * @property string $FromDt
- * @property string $ToDt
- * @property string $CatgId
- * @property string $CatgName
- * @property string $BFType
- * @property string $ServiceNo
- * @property string $RoomType
- * @property string $SeqNo
- * @property double $TotalPrice
- * @property string $GuestName
+ * @property string $resno
+ * @property string $osrefno
+ * @property string $hbookid
+ * @property string $voucherno
+ * @property string $voucherdt
+ * @property string $status
+ * @property string $hotelid
+ * @property string $fromdt
+ * @property string $todt
+ * @property string $catgid
+ * @property string $catgname
+ * @property string $bftype
+ * @property string $serviceno
+ * @property string $roomtype
+ * @property string $seqno
+ * @property double $totalprice
+ * @property string $guestname
  * @property string $update_dt
+ * @property string $nightprice
  */
 class Bookmg extends CActiveRecord
 {
+    public $property_name;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -43,17 +46,17 @@ class Bookmg extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, ResNo, OSRefNo, HBookId, VoucherNo, VoucherDt, Status, HotelId, FromDt, ToDt, CatgName, BFType, ServiceNo, RoomType, SeqNo, TotalPrice, update_dt', 'required'),
+			array('user_id, resno, osrefno, hbookid, voucherno, voucherdt, status, hotelid, fromdt, todt, catgname, bftype, serviceno, roomtype, seqno, totalprice, update_dt', 'required'),
 			array('user_id', 'numerical', 'integerOnly'=>true),
-			array('TotalPrice', 'numerical'),
-			array('ResNo, OSRefNo, HBookId, VoucherNo, HotelId, CatgId, CatgName, ServiceNo, RoomType', 'length', 'max'=>100),
-			array('Status', 'length', 'max'=>10),
-			array('BFType', 'length', 'max'=>50),
-			array('SeqNo', 'length', 'max'=>3),
-			array('GuestName', 'safe'),
+			array('totalprice, nightprice', 'numerical'),
+			array('resno, osrefno, hbookid, voucherno, hotelid, catgid, catgname, serviceno, roomtype', 'length', 'max'=>100),
+			array('status', 'length', 'max'=>10),
+			array('bftype', 'length', 'max'=>50),
+			array('seqno', 'length', 'max'=>3),
+			array('guestname', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('booking_id, user_id, ResNo, OSRefNo, HBookId, VoucherNo, VoucherDt, Status, HotelId, FromDt, ToDt, CatgId, CatgName, BFType, ServiceNo, RoomType, SeqNo, TotalPrice, GuestName, update_dt', 'safe', 'on'=>'search'),
+			array('booking_id, user_id, resno, osrefno, hbookid, voucherno, voucherdt, status, hotelid, fromdt, todt, catgid, catgname, bftype, serviceno, roomtype, seqno, totalprice, guestname, update_dt', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -76,24 +79,26 @@ class Bookmg extends CActiveRecord
 		return array(
 			'booking_id' => 'Booking',
 			'user_id' => 'User',
-			'ResNo' => 'Res No',
-			'OSRefNo' => 'Osref No',
-			'HBookId' => 'Hbook',
-			'VoucherNo' => 'Voucher No',
-			'VoucherDt' => 'Voucher Dt',
-			'Status' => 'Status',
-			'HotelId' => 'Hotel',
-			'FromDt' => 'From Dt',
-			'ToDt' => 'To Dt',
-			'CatgId' => 'Catg',
-			'CatgName' => 'Catg Name',
-			'BFType' => 'Bftype',
-			'ServiceNo' => 'Service No',
-			'RoomType' => 'Room Type',
-			'SeqNo' => 'Seq No',
-			'TotalPrice' => 'Total Price',
-			'GuestName' => 'Guest Name',
-			'update_dt' => 'Update Dt',
+			'resno' => 'Res No',
+			'osrefno' => 'Osref No',
+			'hbookid' => 'Hbook',
+			'voucherno' => 'Voucher No',
+			'voucherdt' => 'Voucher Dt',
+			'status' => 'status',
+			'hotelid' => 'Hotel',
+			'fromdt' => 'From Dt',
+			'todt' => 'To Dt',
+			'catgid' => 'Catg',
+			'catgname' => 'Catg Name',
+			'bftype' => 'bftype',
+			'serviceno' => 'Service No',
+			'roomtype' => 'Room Type',
+			'seqno' => 'Seq No',
+			'totalprice' => 'Total Price',
+      'nightprice' => 'Night Price',
+			'guestname' => 'Guest Name',
+			'update_dt' => 'Booking time',
+            'property_name'=> 'Hotel',
 		);
 	}
 
@@ -114,30 +119,57 @@ class Bookmg extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
+        $criteria->alias = 'tghbookmg';
+        $criteria->select = "tghproperty.property_name,
+                            tghbookmg.`booking_id`,
+                            tghbookmg.`user_id`,
+                            tghbookmg.`resno`,
+                            tghbookmg.`osrefno`,
+                            tghbookmg.`hbookid`,
+                            tghbookmg.`voucherno`,
+                            tghbookmg.`voucherdt`,
+                            tghbookmg.`status`,
+                            tghbookmg.`hotelid`,
+                            tghbookmg.`fromdt`,
+                            tghbookmg.`todt`,
+                            tghbookmg.`catgid`,
+                            tghbookmg.`catgname`,
+                            tghbookmg.`bftype`,
+                            tghbookmg.`serviceno`,
+                            tghbookmg.`roomtype`,
+                            tghbookmg.`seqno`,
+                            tghbookmg.`totalprice`,
+                            tghbookmg.`nightprice`,
+                            tghbookmg.`guestname`,
+                            tghbookmg.`update_dt`";
 
-		$criteria->compare('booking_id',$this->booking_id,true);
-		$criteria->compare('user_id',$this->user_id);
-		$criteria->compare('ResNo',$this->ResNo,true);
-		$criteria->compare('OSRefNo',$this->OSRefNo,true);
-		$criteria->compare('HBookId',$this->HBookId,true);
-		$criteria->compare('VoucherNo',$this->VoucherNo,true);
-		$criteria->compare('VoucherDt',$this->VoucherDt,true);
-		$criteria->compare('Status',$this->Status,true);
-		$criteria->compare('HotelId',$this->HotelId,true);
-		$criteria->compare('FromDt',$this->FromDt,true);
-		$criteria->compare('ToDt',$this->ToDt,true);
-		$criteria->compare('CatgId',$this->CatgId,true);
-		$criteria->compare('CatgName',$this->CatgName,true);
-		$criteria->compare('BFType',$this->BFType,true);
-		$criteria->compare('ServiceNo',$this->ServiceNo,true);
-		$criteria->compare('RoomType',$this->RoomType,true);
-		$criteria->compare('SeqNo',$this->SeqNo,true);
-		$criteria->compare('TotalPrice',$this->TotalPrice);
-		$criteria->compare('GuestName',$this->GuestName,true);
-		$criteria->compare('update_dt',$this->update_dt,true);
+        $criteria->join = "JOIN tghproperty ON tghbookmg.`hotelid` = tghproperty.property_cd";
+
+        $criteria->compare('tghbookmg.booking_id',$this->booking_id,true);
+        $criteria->compare('tghbookmg.user_id',$this->user_id);
+        $criteria->compare('tghbookmg.resno',$this->resno,true);
+        $criteria->compare('tghbookmg.osrefno',$this->osrefno,true);
+        $criteria->compare('tghbookmg.hbookid',$this->hbookid,true);
+        $criteria->compare('tghbookmg.voucherno',$this->voucherno,true);
+        $criteria->compare('tghbookmg.voucherdt',$this->voucherdt,true);
+        $criteria->compare('tghbookmg.status',$this->status,true);
+        $criteria->compare('tghbookmg.hotelid',$this->hotelid,true);
+        $criteria->compare('tghbookmg.fromdt',$this->fromdt,true);
+        $criteria->compare('tghbookmg.todt',$this->todt,true);
+        $criteria->compare('tghbookmg.catgid',$this->catgid,true);
+        $criteria->compare('tghbookmg.catgname',$this->catgname,true);
+        $criteria->compare('tghbookmg.bftype',$this->bftype,true);
+        $criteria->compare('tghbookmg.serviceno',$this->serviceno,true);
+        $criteria->compare('tghbookmg.roomtype',$this->roomtype,true);
+        $criteria->compare('tghbookmg.seqno',$this->seqno,true);
+        $criteria->compare('tghbookmg.totalprice',$this->totalprice);
+        $criteria->compare('tghbookmg.nightprice',$this->nightprice);
+        $criteria->compare('tghbookmg.guestname',$this->guestname,true);
+        $criteria->compare('tghbookmg.update_dt',$this->update_dt,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+            'sort'=>array('defaultOrder'=>'tghbookmg.update_dt DESC')
 		));
 	}
 

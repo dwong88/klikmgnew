@@ -72,8 +72,8 @@ class UsersController extends Controller
 		$email=$_REQUEST['email'];
 		$phoneNo=$_REQUEST['phoneNo'];
 		$password=Encryption::encrypt($_REQUEST['password']);
-		//echo ("INSERT INTO tghproperty (property_cd,market_name, update_dt)VALUES('$namaDepan','$namaBelakang','$now')");
-		DAO::executeSql("INSERT INTO tghusers (fullName,email,phoneNo,password, update_dt)VALUES('$fullName','$email','$phoneNo','$password','$now')");
+		//echo ("INSERT INTO tghusers (fullname,email,phoneno,password, update_dt)VALUES('$fullName','$email','$phoneNo','$password','$now')");
+		DAO::executeSql("INSERT INTO tghusers (fullname,email,phoneno,password,reg_manual,reg_google,reg_facebook, update_dt)VALUES('$fullName','$email','$phoneNo','$password',1,0,0,'$now')");
 
 
 		echo json_encode(array('message' => 'Congratulations the record ' . $fullName . ' was added to the database'));

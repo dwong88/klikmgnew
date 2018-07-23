@@ -1,0 +1,162 @@
+<!--
+  Generated template for the BookingDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="cls-search-rest" [ngClass]="searchModeClass">
+
+  <ion-navbar>
+    <ion-title>{{"BOOKING" | translate}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon style="margin-right: 15px" name="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar class="extra-header">
+    <ion-title no-padding class="custom-header">
+      <span class="text-tax">
+        {{"PRICING_NOTICE" | translate }}
+      </span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid padding>
+    <ion-row align-items-center>
+      <ion-col class="text-title">
+        {{bookingDetail.record.property_name}}
+      </ion-col>
+      <!-- <ion-col text-right>
+      <button ion-button small clear color="dark">DETAILS</button>
+    </ion-col> -->
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="text-subtitle">{{"ROOM_TYPE" | translate}}</span>
+        <br />
+        <span class="text-content">{{bookingDetail.record.roomcateg_name}}</span>
+      </ion-col>
+
+      <ion-col>
+        <span class="text-subtitle">Check in</span>
+        <br />
+        <!--<span class="text-content" *ngIf="bookingDetail.mode != 2">{{bookingDetail.propDetail.checkIn | date:'d MMM y • H:mm'}}</span>
+        <span class="text-content" *ngIf="bookingDetail.mode == 2">{{bookingDetail.checkIn | date:'d MMM y'}}</span>-->
+        <span class="text-content">{{bookingDetail.record.check_in | date:'d MMM y'}}</span>
+      </ion-col>
+      <ion-col>
+      <span class="text-subtitle">Check out</span>
+      <br />
+      <!--<span class="text-content" *ngIf="bookingDetail.mode != 2">{{endDate | date:'d MMM y • H:mm'}}</span>-->
+      <!--<span class="text-content" *ngIf="bookingDetail.mode == 2">{{bookingDetail.propDetail.checkIn | date:'d MMM y'}}</span>-->
+        <span class="text-content">{{bookingDetail.record.check_out | date:'d MMM y'}}</span>
+      </ion-col>
+
+
+     <!-- <ion-col>
+        <span class="text-subtitle">{{"DURATION" | translate}}</span>
+        <br />
+        <span class="text-content" *ngIf="bookingDetail.mode == 0">{{bookingDetail.stayType}} • {{bookingDetail.duration}} {{"HOUR(S)" | translate}}</span>
+        <span class="text-content" *ngIf="bookingDetail.mode == 1">{{bookingDetail.stayType}}</span>
+        <span class="text-content" *ngIf="bookingDetail.mode == 2">{{bookingDetail.duration}} {{"NIGHT(S)" | translate}}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <span class="text-subtitle">Check in</span>
+        <br />
+        <span class="text-content" *ngIf="bookingDetail.mode != 2">{{bookingDetail.propDetail.checkIn | date:'d MMM y • H:mm'}}</span>
+        <span class="text-content" *ngIf="bookingDetail.mode == 2">{{bookingDetail.checkIn | date:'d MMM y'}}</span>
+      </ion-col>-->
+      <!--<ion-col>-->
+        <!--<span class="text-subtitle">Check out</span>-->
+        <!--<br />-->
+        <!--<span class="text-content" *ngIf="bookingDetail.mode != 2">{{endDate | date:'d MMM y • H:mm'}}</span>-->
+        <!--<span class="text-content" *ngIf="bookingDetail.mode == 2">{{bookingDetail.propDetail.checkIn | date:'d MMM y'}}</span>-->
+      <!--</ion-col>-->
+    </ion-row>
+  </ion-grid>
+  <div class="separator">
+
+  </div>
+  <ion-grid padding>
+    <ion-row>
+      <ion-col class="text-header">
+        {{"GUEST_DETAILS" | translate}}
+      </ion-col>
+    </ion-row>
+    <form [formGroup]="orderForm">
+        <ion-auto-complete [dataProvider]="completeGuest" formControlName="fullName" (keyup)="handleKeyUp($event);" [options]="placeholderName" (itemSelected)="autoFill($event)" #searchbar></ion-auto-complete>
+      <div *ngIf="!orderForm.controls.fullName.valid && orderForm.controls.fullName.dirty" class="div-error-msg">
+        {{"INVALID_NAME" | translate}}
+      </div>
+      <!--<ion-input type="email" formControlName="email" tabindex="2" [(ngModel)]="email" (keyup)="handleKeyUp($event);" placeholder="{{'EMAIL_ADDRESS' | translate}}" #fieldEmail></ion-input>-->
+      <ion-input type="email" tabindex="2" [formControl]="guestFormEmail" [(ngModel)]="email" (keyup)="handleKeyUp($event);" placeholder="{{'EMAIL_ADDRESS' | translate}}" #fieldEmail></ion-input>
+      <!--<ion-input type="email" formControlName="email" tabindex="2" [(ngModel)]="email" (keyup)="handleKeyUp($event);" placeholder="{{'EMAIL_ADDRESS' | translate}}" #fieldEmail></ion-input>
+      <div *ngIf="!orderForm.controls.email.valid && orderForm.controls.email.dirty" class="div-error-msg">
+        <p>{{"INVALID_EMAIL" | translate}}</p>
+      </div>
+      <ion-input type="number" formControlName="phoneNo" tabindex="3" [(ngModel)]="phoneNo" (keyup)="handleKeyUp($event);" placeholder="{{'PHONE_NUMBER' | translate}}" #fieldPhone></ion-input>
+      <div *ngIf="!orderForm.controls.phoneNo.valid && orderForm.controls.phoneNo.dirty" class="div-error-msg">
+        <p>{{"INVALID_LENGTH" | translate}}</p>
+      </div>-->
+    </form>
+    <ion-row align-items-center>
+      <ion-col>
+        <ion-list radio-group [(ngModel)]="order.recipient">
+          <ion-item no-lines>
+            <ion-label class="text-content">{{"I'M_BOOKING_FOR_MYSELF" | translate}}</ion-label>
+            <ion-radio value="self" (click)="orderForRadio('1');" checked></ion-radio>
+          </ion-item>
+          <ion-item no-lines>
+            <ion-label class="text-content">{{"I'M_BOOKING_FOR_ANOTHER_PERSON" | translate}}</ion-label>
+            <ion-radio value="other" (click)="orderForRadio('2');"></ion-radio>
+          </ion-item>
+        </ion-list>
+
+        <ion-item *ngIf="order.recipient === 'other'">
+          <ion-label floating class="text-content">{{ "GUEST_NAME" | translate }}</ion-label>
+          <ion-input type="text" tabindex="4" [formControl]="guestFormName" #fieldGuest></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text-header">
+        {{"SPECIAL_REQUEST" | translate}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label floating class="text-content">{{ "SPECIAL_REQUEST_PLACEHOLDER" | translate }}</ion-label>
+          <ion-input type="text" tabindex="5" (keyup)="handleKeyUp($event);" [(ngModel)]="order.request" name="request" #fieldRequest></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer padding-horizontal [ngClass]="searchModeClass">
+  <ion-row align-items-center>
+    <ion-col text-justify class="text-content">
+      {{"TOTAL_PRICE" | translate}}
+      <br/>
+      <span class="text-price" style="color: #E6611A"><strong>{{currencySymbol}} {{bookingDetail.record.roomprice | indoNumber:'1.0-0'}}</strong></span>
+    </ion-col>
+   <!-- <ion-col text-justify *ngIf="bookingDetail.mode == 0" class="text-content">
+      {{"TOTAL_PRICE" | translate}}
+      <br/>
+      <span class="text-price">{{currencySymbol}} {{transitPrice * bookingDetail.roomQty | number:'1.0-0'}}</span>
+    </ion-col>-->
+    <ion-col>
+      <!-- <button ion-button block color="dark" [disabled]="!orderForm.valid || (order.recipient === 'other' && !guestForm?.valid)"
+        (click)="printForm()">{{"CONTINUE" | translate}}</button> -->
+      <!--<button ion-button block (click)="printForm(orderForm.valid, order.recipient, guestForm?.valid)">{{"CONTINUE" | translate}}</button>-->
+      <button ion-button block (click)="printForm()">{{"CONTINUE" | translate}}</button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

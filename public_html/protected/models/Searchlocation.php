@@ -115,4 +115,9 @@ class Searchlocation extends ActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getSelectVal()
+    {
+        return $this->location_type.':'.$this->location_code;
+    }
 }

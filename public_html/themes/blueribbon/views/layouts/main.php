@@ -16,11 +16,10 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/sitemenu.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/site.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body onLoad="buildHtmlTable('#excelDataTable')">
+<body>
 
 <div class="container" id="page">
 
@@ -41,8 +40,8 @@
                 <li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/Getrsvninfo'));?>">RSVN Info</a></li>
                 <li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/AcceptBooking'));?>">Accept Booking</a></li>-->
                 <li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/bookmg/admin'));?>">My Booking</a></li>
-                <li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/Getcancelpolicy'));?>">Get Cancel Policy</a></li>
-                <!--<li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/AmendHotel'));?>">Amend Hotel</a></li>
+                <!--<li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/Getcancelpolicy'));?>">Get Cancel Policy</a></li>
+                <li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/AmendHotel'));?>">Amend Hotel</a></li>
                 <li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/Cancelrsvn'));?>">Cancel RSVN</a></li>-->
                 <li class="pureCssMenui0"><a class="pureCssMenui0" href="<?php echo CHtml::normalizeUrl(array('/site/logout'));?>">Logout (<?php echo Yii::app()->user->name; ?>)</a></li>
 			<?php } ?>

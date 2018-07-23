@@ -32,6 +32,7 @@ class GridView extends CGridView
             echo "<th class='button-column' style='width: 20px;'>Accept Booking</th>";
             echo "<th class='button-column' style='width: 20px;'>Amend Hotel</th>";
             echo "<th class='button-column' style='width: 20px;'>Cancel RSVN</th>";
+            echo "<th class='button-column' style='width: 20px;'>Get Cancel Policy</th>";
             echo "</tr>";
             //foreach ($qRoomType as $vRoomType) {
                 echo "<tr>";
@@ -42,7 +43,7 @@ class GridView extends CGridView
                 //echo "<td class=\"col-right\">".CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/create.png', 'Create'), array('/master/room/update', 'id'=>$vRoomType['room_type_id']), array('title'=>'Room')).'&nbsp;'."</td>";
                 echo '<td class="button-column">';
                 //echo $data['booking_id'];
-                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/reservation.png', 'Reservation'), array('/mg/hoteldata/Getrsvninfo', 'id'=>$data['booking_id']), array('title'=>'Reservation')).'&nbsp;';
+                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/reservation.png', 'Reservation'), array('/mg/hoteldata/Getrsvninfo', 'id'=>$data['booking_id']), array('title'=>'Reservation','target'=>'_blank')).'&nbsp;';
 
                 //echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/bed.png', 'Bed'), array('/master/roomtypebed/update', 'id'=>$vRoomType['room_type_id']), array('title'=>'Bed')).'&nbsp;';
                 //echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/features.png', 'Features'), array('/master/roomtypefeatures/create', 'id'=>$vRoomType['room_type_id']), array('title'=>'Features')).'&nbsp;';
@@ -53,13 +54,16 @@ class GridView extends CGridView
                 //echo CHtml::link(CHtml::image($this->baseScriptUrl.'/delete.png', 'view'), array('/master/roomtype/delete', 'id'=>$vRoomType['room_type_id']), array('class'=>'delete', 'title'=>'Delete'));
                 echo "</td>";
                 echo '<td class="button-column">';
-                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/bed.png', 'Bed'), array('/mg/hoteldata/AcceptBooking', 'id'=>$data['booking_id']), array('title'=>'Bed')).'&nbsp;';
+                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/bed.png', 'Bed'), array('/mg/hoteldata/AcceptBooking', 'id'=>$data['booking_id']), array('title'=>'Bed','target'=>'_blank')).'&nbsp;';
                 echo "</td>";
                 echo '<td class="button-column">';
-                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/update.png', 'Update'), array('/mg/hoteldata/AmendHotel', 'id'=>$data['booking_id']), array('title'=>'Amend Hotel')).'&nbsp;';
+                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/update.png', 'Update'), array('/mg/hoteldata/AmendHotel', 'id'=>$data['booking_id']), array('title'=>'Amend Hotel','target'=>'_blank')).'&nbsp;';
                 echo "</td>";
                 echo '<td class="button-column">';
-                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/delete.png', 'Delete'), array('/mg/hoteldata/Cancelrsvn', 'id'=>$data['booking_id']), array('title'=>'Cancel RSVN')).'&nbsp;';
+                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/delete.png', 'Delete'), array('/mg/hoteldata/Cancelrsvn', 'id'=>$data['booking_id']), array('title'=>'Cancel RSVN','target'=>'_blank')).'&nbsp;';
+                echo "</td>";
+                echo '<td class="button-column">';
+                echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/images/view.png', 'View'), array('/mg/hoteldata/Getcancelpolicy', 'id'=>$data['booking_id']), array('title'=>'Get Cancel Policy','target'=>'_blank')).'&nbsp;';
                 echo "</td>";
                 echo "</tr>";
             //}

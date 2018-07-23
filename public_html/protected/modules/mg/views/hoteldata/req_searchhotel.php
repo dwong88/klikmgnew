@@ -11,6 +11,6 @@
         <RoomInfo>
             <AdultNum RoomType="" RQBedChild="<?php echo $RQBedChild; ?>"><?php echo $AdultNum; ?></AdultNum>
         </RoomInfo>
-        <flagAvail/>
+        <flagAvail>Y</flagAvail>
     </SearchHotel_Request>
 </Service_SearchHotel>

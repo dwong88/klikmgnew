@@ -31,3 +31,9 @@ input[readonly] {background-color: #dedede ! important;}
 .cls-table-detail {
 	padding: 5px;
 }
+.title-page {
+	font-size: 14px;
+	color: #000099;
+	font-weight: bold;
+	padding-bottom: 20px;
+}

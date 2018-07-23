@@ -68,6 +68,7 @@ function addAllColumnHeaders(myList, selector) {
   <tr>
       <th>Hotel</th>
       <th>Room Category</th>
+      <th>Breakfast</th>
       <th>Room Type</th>
       <th>Price</th>
   </tr>
@@ -77,22 +78,27 @@ function addAllColumnHeaders(myList, selector) {
     {
       echo "<tr>";
       echo "<td>";
-      echo $property_name[$c] = $hotels[$c]['name'];
+      echo $hotels[$c]['name'];
       echo "</td>";
       echo "<td>";
-      echo $property_name[$c] = $hotels[$c]['roomcateg_name'];
+      echo $hotels[$c]['roomcateg_name'];
+      echo "</td>";
+      echo "<td>".$hotels[$c]['bftype']."</td>";
+      echo "<td>";
+      echo $hotels[$c]['RoomType'];
       echo "</td>";
       echo "<td>";
-      echo $property_name[$c] = $hotels[$c]['RoomType'];
-      echo "</td>";
-      echo "<td>";
-      echo $property_name[$c] = $hotels[$c]['price'];
-      $temp_data=array('checkIn'=>$_GET['checkIn'],'checkOut;'=>$_GET['checkOut'],'BFType'=>$hotels[$c]['BFType'],'AdultNum'=>$_GET['AdultNum'],'NumRooms'=>$_GET['NumRooms'],'roomcateg_id'=>$hotels[$c]['roomcateg_id']);
+      echo Yii::app()->format->formatNumber($hotels[$c]['roomprice']);
+//      $temp_data=array('checkIn'=>$_GET['checkIn'],'checkOut;'=>$_GET['checkOut'],'bftype'=>$hotels[$c]['bftype'],'AdultNum'=>$_GET['AdultNum'],'NumRooms'=>$_GET['NumRooms'],'roomcateg_id'=>$hotels[$c]['roomcateg_id']);
       //print_r($temp_data);
       echo "</td>";
       //$urlsubm=CHtml::normalizeUrl(array('/mg/hoteldata/BookHoteltest'));
       //echo CHtml::normalizeUrl(array('/mg/hoteldata/BookHoteltest'));
-      echo "<td><a href='".CHtml::normalizeUrl(array('/mg/hoteldata/BookHoteltest&hotelCode='.$_GET['hotelCode'].'&checkIn='.$_GET['checkIn'].'&checkOut='.$_GET['checkOut'].'&AdultNum='.$_GET['AdultNum'].'&NumRooms='.$_GET['NumRooms'].'&CatgId='.$hotels[$c]['roomcateg_id']))."'>Book</a></td>";
+      $categid=$hotels[$c]['roomcateg_id'];
+      $bftype=$hotels[$c]['bftype'];
+      $roomty=$hotels[$c]['RoomType'];
+      echo "<td><a href='#' id='myButton' onClick=saveQuantity('$categid','$bftype','$roomty')>Book</a></td>";
+      //echo "<td><a href='".CHtml::normalizeUrl(array('/mg/hoteldata/BookHoteltest&hotelCode='.$_GET['hotelCode'].'&checkIn='.$_GET['checkIn'].'&checkOut='.$_GET['checkOut'].'&AdultNum='.$_GET['AdultNum'].'&NumRooms='.$_GET['NumRooms'].'&CatgId='.$hotels[$c]['roomcateg_id'].'&national='.$_GET['national'].'&bftype='.$hotels[$c]['bftype'].'&currency='.$_GET['currency'].'&RoomType='.$hotels[$c]['RoomType'].'&BFType='.$hotels[$c]['bftype']))."'>Book</a></td>";
       /*echo "<td>
       <form actions='/klikmgnew/public_html/index.php?r=mg/hoteldata/BookHoteltest/'>
         <input type =hidden name=hotelCode value='".$_GET['hotelCode']."'>
@@ -109,7 +115,7 @@ function addAllColumnHeaders(myList, selector) {
       </td>";*/
       $destCountry[$c] = $hotels[$c]['country_cd'];
       $city[$c] = $hotels[$c]['city_cd'];
-      $property_name[$c] = $hotels[$c]['name'];
+      $hotels[$c]['name'];
       echo "</tr>";
     }
 ?>
@@ -118,3 +124,37 @@ function addAllColumnHeaders(myList, selector) {
 //print_r($_SESSION);
 //echo $_SESSION['_idghoursmghol__states']['employee_cd'];
 ?>
+<script>
+function saveQuantity(roomcateg_id,bftype,RoomType)
+{
+console.log(roomcateg_id)
+  $.post("<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/checkPrice'))?>",
+			{
+        hotelCode:'<?php echo $_GET['hotelCode']?>',
+        checkIn: '<?php echo $_GET['checkIn']?>',
+        checkOut:'<?php echo $_GET['checkOut']?>',
+        AdultNum:<?php echo $_GET['AdultNum']?>,
+        NumRooms:<?php echo $_GET['NumRooms']?>,
+        CatgId:roomcateg_id,
+        national:'<?php echo $_GET['national']?>',
+        bftype:bftype,
+        currency:'<?php echo $_GET['currency']?>',
+        RoomType:RoomType
+			},
+			function(data) {
+				//alert(data.message);
+        if(data.message!='successful')
+        {
+          if (confirm('Price changed.')) {
+              window.location.replace("<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/BookHoteltest'))?>"+"&hotelCode="+data.hotelCode+"&checkIn="+data.checkIn+"&checkOut="+data.checkOut+"&AdultNum="+data.AdultNum+"&NumRooms="+data.NumRooms+"&CatgId="+data.CatgId+"&national="+data.national+"&currency="+data.currency+"&RoomType="+data.RoomType+"&bftype="+data.bftype);
+          } else {
+              window.location.replace("<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/SearchHotel'))?>");
+          }
+        }
+        else {
+          window.location.replace("<?php echo CHtml::normalizeUrl(array('/mg/hoteldata/BookHoteltest'))?>"+"&hotelCode="+data.hotelCode+"&checkIn="+data.checkIn+"&checkOut="+data.checkOut+"&AdultNum="+data.AdultNum+"&NumRooms="+data.NumRooms+"&CatgId="+data.CatgId+"&national="+data.national+"&currency="+data.currency+"&RoomType="+data.RoomType+"&bftype="+data.bftype);
+        }
+
+			});
+}
+</script>

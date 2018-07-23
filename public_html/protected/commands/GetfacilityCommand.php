@@ -32,37 +32,28 @@ class GetfacilityCommand extends CConsoleCommand
               , array(
                   'hotelCode'=>$hotelCode[$c],
               ), true);
-
+          $hotelList='';
           $jsonResult = ApiRequestor::post(ApiRequestor::URL_GET_HOTEL_DETAIL, $xmlRequest);
-              if(isset($jsonResult['GetHotelDetail_Response']['Facility'])){
-                  $hotelList = json_decode($jsonResult, TRUE)['GetHotelDetail_Response']['Facility'];
-                  print_r($hotelList);
-                  //echo $hotelList['HotelName'];
+          $hotelList = json_decode($jsonResult,TRUE)['GetHotelDetail_Response'];
 
-                  $temp_fc=array();
-                  //print_r($FacilityList);
-                  if($hotelList!=NULL){
-                      echo "hellow";
-                      foreach ($hotelList as $listFac) {
-                          $temp_fc[] = $listFac['@attributes']['name'];
-                      }
-                      echo $temp_fc;
-                  }
-              }
+              /*echo "<pre>";
+                  print_r($hotelList);
+                  echo "</pre>";*/
 
 
           $textCSV = '';
           $lineText = '';
+
           $lineText = Helper::putStringCSV($lineText, 'Hotel ID', 'str');
-          $lineText = Helper::putStringCSV($lineText, 'Hotel Name', 'str');
-          $lineText = Helper::putStringCSV($lineText, 'Hotel Rooms', 'number');
+          $lineText = Helper::putStringCSV($lineText, 'Facility Name', 'str');
+          /*$lineText = Helper::putStringCSV($lineText, 'Hotel Rooms', 'number');
           $lineText = Helper::putStringCSV($lineText, 'Address1', 'str');
           $lineText = Helper::putStringCSV($lineText, 'Address2', 'str');
           $lineText = Helper::putStringCSV($lineText, 'Address3', 'str');
           $lineText = Helper::putStringCSV($lineText, 'Location', 'str');
           $lineText = Helper::putStringCSV($lineText, 'Telephone', 'str');
           $lineText = Helper::putStringCSV($lineText, 'Email', 'str');
-          $lineText = Helper::putStringCSV($lineText, 'Rating', 'number');
+          $lineText = Helper::putStringCSV($lineText, 'Rating', 'number');*/
           $textCSV = $textCSV.(empty($textCSV)? '' : "\r\n").$lineText;
 
           $strAdd1 = '';
@@ -85,19 +76,37 @@ class GetfacilityCommand extends CConsoleCommand
           if(empty($hotelList['Telephone']) === false) {
             $strAddTelephone = $hotelList['Telephone'];
           }
-
+           //print_r($hotelList);
           if(isset($hotelList['HotelId'])){
               $lineText = '';
               $lineText = Helper::putStringCSV($lineText, $hotelList['HotelId'], 'str');
-              $lineText = Helper::putStringCSV($lineText, $hotelList['HotelName'], 'str');
-              $lineText = Helper::putStringCSV($lineText, $hotelList['HotelRooms'], 'number');
+              //$lineText = Helper::putStringCSV($lineText, $hotelList['HotelName'], 'str');
+              /*$lineText = Helper::putStringCSV($lineText, $hotelList['HotelRooms'], 'number');
               $lineText = Helper::putStringCSV($lineText, $strAdd1, 'str');
               $lineText = Helper::putStringCSV($lineText, $strAdd2, 'str');
               $lineText = Helper::putStringCSV($lineText, $strAdd3, 'str');
               $lineText = Helper::putStringCSV($lineText, $hotelList['Location'], 'str');
               $lineText = Helper::putStringCSV($lineText, $strAddTelephone, 'str');
               $lineText = Helper::putStringCSV($lineText, $strAddEmail, 'str');
-              $lineText = Helper::putStringCSV($lineText, $hotelList['Rating'], 'number');
+              $lineText = Helper::putStringCSV($lineText, $hotelList['Rating'], 'number');*/
+
+
+                  //echo "hellow";
+
+                  echo "hellow";
+                if(isset($hotelList['Facility'])) {
+                    $FacilityList = json_decode($jsonResult, TRUE)['GetHotelDetail_Response']['Facility'];
+                    if (isset($FacilityList)) {
+                        foreach ($FacilityList as $listFac) {
+                            $temp_fc = $listFac['@attributes']['name'];
+                            DAO::executeSql("INSERT INTO tghtempfacility(name) VALUES ('".$temp_fc."')");
+                        }
+                        echo $temp_fc;
+
+                        $lineText = Helper::putStringCSV($lineText, $temp_fc, 'str');
+
+                    }
+                }
               $textCSV = $textCSV.(empty($textCSV)? '' : "\r\n").$lineText;
           }
 

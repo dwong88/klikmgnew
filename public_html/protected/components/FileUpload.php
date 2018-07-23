@@ -6,6 +6,7 @@ class FileUpload
 	const ROOM_PHOTO_PATH = 3;
 	const ROOM_PHOTO_THUMBS_PATH = 4;
   const HOTEL_CSV_PATH = 5;
+	const ROOMCATEG_CSV_PATH = 6;
 
 	/***
 	 * Untuk dapatin file path untuk upload file. "C:\xampp\htdocs\del\upload\foto\file.ext"
@@ -32,6 +33,9 @@ class FileUpload
       case FileUpload::HOTEL_CSV_PATH: // Untuk file Client_PO pada menu SO. (tdpso)
 				$pathFile = Yii::app()->basePath.'/../upload/syncdatamg/'.$fileName;
 				break;
+			case FileUpload::ROOMCATEG_CSV_PATH: // Untuk file Client_PO pada menu SO. (tdpso)
+				$pathFile = Yii::app()->basePath.'/../upload/syncdatamg/roomcateg/'.$fileName;
+			break;
 	}
 		return $pathFile;
 	}
